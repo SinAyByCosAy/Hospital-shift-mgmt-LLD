@@ -45,6 +45,6 @@ abstract public class StaffBuilder {
         return staffList;
     }
 
-    abstract public void setStaffList(HashMap<String, Integer> staffList);
+    abstract public void setStaffList();
 
 }
