@@ -9,6 +9,16 @@ public class Staff {
     int timeLimit;
     HashMap<String, Integer> staffList;
 
+    private Staff(StaffBuilder builder){
+        this.startTime = builder.getStartTime();
+        this.endTime = builder.getEndTime();
+        this.floorNo = builder.getFloorNo();
+        this.timeLimit = builder.getTimeLimit();
+        this.staffList = builder.getStaffList();
+    }
+    public static Staff getInstance(StaffBuilder builder){
+        return new Staff(builder);
+    }
     public String getStartTime() {
         return startTime;
     }
