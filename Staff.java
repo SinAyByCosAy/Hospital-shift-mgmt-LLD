@@ -19,6 +19,7 @@ public class Staff {
     public static Staff getInstance(StaffBuilder builder){
         return new Staff(builder);
     }
+
     public String getStartTime() {
         return startTime;
     }

@@ -13,32 +13,36 @@ abstract public class StaffBuilder {
         return startTime;
     }
 
-    public void setStartTime(String startTime) {
+    public StaffBuilder setStartTime(String startTime) {
         this.startTime = startTime;
+        return this;
     }
 
     public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(String endTime) {
+    public StaffBuilder setEndTime(String endTime) {
         this.endTime = endTime;
+        return this;
     }
 
     public int getFloorNo() {
         return floorNo;
     }
 
-    public void setFloorNo(int floorNo) {
+    public StaffBuilder setFloorNo(int floorNo) {
         this.floorNo = floorNo;
+        return this;
     }
 
     public int getTimeLimit() {
         return timeLimit;
     }
 
-    public void setTimeLimit(int timeLimit) {
+    public StaffBuilder setTimeLimit(int timeLimit) {
         this.timeLimit = timeLimit;
+        return this;
     }
 
     public HashMap<String, Integer> getStaffList() {
@@ -47,4 +51,7 @@ abstract public class StaffBuilder {
 
     abstract public void setStaffList();
 
+    public Staff build(){
+        return Staff.getInstance(this);
+    }
 }
