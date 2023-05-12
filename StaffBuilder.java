@@ -49,7 +49,7 @@ abstract public class StaffBuilder {
         return staffList;
     }
 
-    abstract public void setStaffList();
+    abstract public StaffBuilder setStaffList();
 
     public Staff build(){
         return Staff.getInstance(this);

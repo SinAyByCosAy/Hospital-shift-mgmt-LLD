@@ -6,7 +6,7 @@ public class StaffDirector {
         this.builder = builder;
     }
     public Staff getStaff(){
-        if(builder instanceof DoctorBuilder) {
+        if(this.builder instanceof DoctorBuilder) {
             return getDoctor();
         }else{
             return getNurse();
