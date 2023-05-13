@@ -3,11 +3,11 @@ package Builder.HospitalShift;
 import java.util.HashMap;
 
 public class Staff {
-    String startTime;
-    String endTime;
-    int floorNo;
-    int timeLimit;
-    HashMap<String, Integer> staffList;
+    private String startTime;
+    private String endTime;
+    private int floorNo;
+    private int timeLimit;
+    private HashMap<String, Integer> staffList;
 
     private Staff(StaffBuilder builder){
         this.startTime = builder.getStartTime();
