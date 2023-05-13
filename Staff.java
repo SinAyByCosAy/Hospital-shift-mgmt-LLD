@@ -41,13 +41,13 @@ public class Staff {
     }
 
     public void goTraining(String staffName){
-        if(staffList.get(staffName) > timeLimit || staffList.get(staffName) + 2> timeLimit){
+        if(staffList.get(staffName) + 2> timeLimit){
             throw new IllegalArgumentException("Staff can't have training today due to exhausted hours");
         }
         staffList.put(staffName, staffList.get(staffName)+2);
     }
     public void goSurgery(String staffName){
-        if(staffList.get(staffName) > timeLimit || staffList.get(staffName) + 1> timeLimit){
+        if(staffList.get(staffName) + 1> timeLimit){
             throw new IllegalArgumentException("Staff can't have surgery now due to exhausted hours");
         }
         staffList.put(staffName, staffList.get(staffName)+1);
