@@ -1,4 +1,4 @@
-package Builder.HospitalShift.WithRedundancy;
+package Builder.HospitalShift.NotMaintainable;
 
 public class StaffDirector {
     StaffBuilder builder;

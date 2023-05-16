@@ -1,4 +1,4 @@
-package Builder.HospitalShift.WithRedundancy;
+package Builder.HospitalShift.NotMaintainable;
 
 import java.util.HashMap;
 
