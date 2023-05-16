@@ -1,4 +1,4 @@
-package Builder.HospitalShift;
+package Builder.HospitalShift.WithRedundancy;
 
 public class ClientChiefStaff {
     public static void main(String args[]){
