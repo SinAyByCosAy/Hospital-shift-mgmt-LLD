@@ -17,18 +17,17 @@ public class Staff {
         this.StaffList = builder.getStaffList();
     }
 
-    public static class StaffBuilder{
+    public abstract static class StaffBuilder{
 
-        static StaffBuilder getInstance(){
-            return new StaffBuilder();
-        }
+        private String startTime;
+        private String endTime;
+        private int floorNo;
+        private int timeLimit;
+        protected HashMap<String, Integer> StaffList;
 
-        String startTime;
-        String endTime;
-        int floorNo;
-        int timeLimit;
-        HashMap<String, Integer> StaffList;
-
+//        static StaffBuilder getInstance(){
+//            return new StaffBuilder();
+//        }
         public String getStartTime() {
             return startTime;
         }
@@ -69,10 +68,13 @@ public class Staff {
             return StaffList;
         }
 
-        public StaffBuilder setStaffList(HashMap<String, Integer> staffList) {
-            StaffList = staffList;
-            return this;
-        }
+        abstract public StaffBuilder setStaffList();
+//        public StaffBuilder setStaffList() {
+//            HashMap<String, Integer> staffList = new HashMap<>();
+//            staffList.put("abc",1);
+//            this.StaffList = staffList;
+//            return this;
+//        }
 
         public Staff build(){
             return new Staff(this);
