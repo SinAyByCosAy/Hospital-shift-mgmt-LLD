@@ -25,9 +25,6 @@ public class Staff {
         private int timeLimit;
         protected HashMap<String, Integer> StaffList;
 
-//        static StaffBuilder getInstance(){
-//            return new StaffBuilder();
-//        }
         public String getStartTime() {
             return startTime;
         }
@@ -69,12 +66,6 @@ public class Staff {
         }
 
         abstract public StaffBuilder setStaffList();
-//        public StaffBuilder setStaffList() {
-//            HashMap<String, Integer> staffList = new HashMap<>();
-//            staffList.put("abc",1);
-//            this.StaffList = staffList;
-//            return this;
-//        }
 
         public Staff build(){
             return new Staff(this);
