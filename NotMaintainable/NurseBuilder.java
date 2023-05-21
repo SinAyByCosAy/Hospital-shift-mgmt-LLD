@@ -3,7 +3,7 @@ package Builder.HospitalShift.NotMaintainable;
 import java.util.HashMap;
 
 public class NurseBuilder extends StaffBuilder{
-    public StaffBuilder setStaffList(){
+    public NurseBuilder setStaffList(){
         HashMap<String, Integer>staffList = new HashMap<>();
         staffList.put("Miss Rajneesh", 3);
         staffList.put("Miss Chopra", 6);
