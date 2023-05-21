@@ -6,7 +6,7 @@ public class DoctorBuilder extends Staff.StaffBuilder {
     public static DoctorBuilder getInstance(){
         return new DoctorBuilder();
     }
-    public Staff.StaffBuilder setStaffList(){
+    public DoctorBuilder setStaffList(){
         HashMap<String, Integer> StaffList = new HashMap<>();
         StaffList.put("Dr. Reddy", 8);
         StaffList.put("Dr. Sharma", 6);
